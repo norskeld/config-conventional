@@ -1,0 +1,44 @@
+{
+  "name": "@nrsk/config-conventional",
+  "version": "1.0.0",
+  "description": "Customised and relaxed @commitlint/config-conventional.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"**/*.{ts,json}\"",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norskeld/config-conventional.git"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlint-config",
+    "config-conventional"
+  ],
+  "author": {
+    "name": "Vladislav Mamon",
+    "email": "hello@vm.codes"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/norskeld/config-conventional/issues"
+  },
+  "homepage": "https://github.com/norskeld/config-conventional#readme",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.6.1"
+  },
+  "devDependencies": {
+    "@commitlint/types": "^14.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}
